@@ -1,6 +1,14 @@
 import 'package:flutter/material.dart';
 // import 'package:flutter/services.dart';
 
+// create a main method
+void main() {
+  runApp(const MaterialApp(
+    title: 'Registration App',
+    home: RegisterPage(),
+  ));
+}
+
 class RegisterPage extends StatefulWidget {
   const RegisterPage({super.key});
 
@@ -85,7 +93,7 @@ class _RegisterPageState extends State<RegisterPage> {
                 ),
               ),
               const SizedBox(height: 16.0),
-              //Forgot Password 
+              //Forgot Password
               TextButton(
                 onPressed: () {},
                 child: const Text('Forgot Password'),
@@ -128,8 +136,5 @@ class _RegisterPageState extends State<RegisterPage> {
       return 'Please enter a password with at least 8 characters.';
     }
     return null;
-
-    
   }
 }
-
